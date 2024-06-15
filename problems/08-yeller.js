@@ -4,6 +4,10 @@ return a NEW array where each element of the original array is yelled.
 */
 
 // Your code here 
+function yeller(words) {
+    let yelledArray = words.map(word => word.toUpperCase() + '!');
+    return yelledArray;
+}
 
 
 // let words1 = ['hello', 'world'];
