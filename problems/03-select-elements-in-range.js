@@ -8,6 +8,15 @@ inclusive.
 */
 
 // Your code here 
+function selectElementsInRange(arr, startIdx, endIdx) {
+    if (!Array.isArray(arr) || typeof startIdx !== 'number' || typeof endIdx !== 'number') {
+        return [];
+    }
+    if (startIdx < 0) startIdx = 0;
+    if (endIdx >= arr.length) endIdx = arr.length - 1;
+    const selectedElements = arr.slice(startIdx, endIdx + 1);
+    return selectedElements;
+}
 
 
 // console.log(selectElementsInRange([1, 2, 3], 0, 1));        // [1, 2]
