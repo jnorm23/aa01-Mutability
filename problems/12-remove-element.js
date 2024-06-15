@@ -7,7 +7,14 @@ removed from the array. See test cases for examples.
 */
 
 // Your code here 
-
+function removeElements(arr, startIndex, count) {
+    if (startIndex >= arr.length || startIndex < 0) {
+        return [];
+    }
+    
+    arr.splice(startIndex, count);
+    return arr;
+}
 
 // console.log(removeElements([1, 2, 3], 1, 1));       // [1, 3]
 // console.log(removeElements([1, 2, 3], 1, 2));       // [1]
