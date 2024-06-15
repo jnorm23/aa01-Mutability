@@ -5,8 +5,13 @@ examples.
 */
 
 // Your code here 
-function adjacentSum() {
-    
+function adjacentSum(numbers) {
+    let sumArray = [];    
+    for (let i = 0; i < numbers.length - 1; i++) {
+        let sum = numbers[i] + numbers[i + 1];
+        sumArray.push(sum);
+    }    
+    return sumArray;
 }
 
 // console.log(adjacentSum([3, 7, 2, 11])); // [10, 9, 13], because [ 3+7, 7+2, 2+11 ]

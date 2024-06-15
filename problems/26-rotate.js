@@ -7,7 +7,18 @@ the left. The function should mutate the original array.
 
 // Your code here 
 function rotate(array, num) {
-    
+    if (num > 0) {
+        for (let i = 0; i < num; i++) {
+            const lastElement = array.pop();
+            array.unshift(lastElement);
+        }
+    } else if (num < 0) {
+        for (let i = 0; i < Math.abs(num); i++) {
+            const firstElement = array.shift();
+            array.push(firstElement);
+        }
+    }
+    return array; 
 }
 
 // let arr = ['a', 'b', 'c', 'd', 'e'];

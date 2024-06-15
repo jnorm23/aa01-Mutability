@@ -6,10 +6,13 @@ the previous element. Assume that the length is at least 1.
 */
 
 // Your code here 
-function tripleSequence(){
-    
+function tripleSequence(start, length) {
+    let sequence = [start];
+    for (let i = 1; i < length; i++) {
+        sequence.push(sequence[i - 1] * 3);
+    }
+    return sequence;
 }
-
 // console.log(tripleSequence(2, 4)); // [2, 6, 18, 54]
 // console.log(tripleSequence(4, 5)); // [4, 12, 36, 108, 324]
 

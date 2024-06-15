@@ -7,8 +7,18 @@ numbers of the sequence.
 */
 
 // Your code here 
-function fibonacciSequence(num) {
-    
+function fibonacciSequence(length) {
+    if (length <= 0) {
+        return [];
+    } else if (length === 1) {
+        return [1];
+    }
+    let sequence = [1, 1];
+    for (let i = 2; i < length; i++) {
+        let nextNum = sequence[i - 1] + sequence[i - 2];
+        sequence.push(nextNum);
+    }
+    return sequence;
 }
 
 // console.log(fibonacciSequence(4));  // [ 1, 1, 2, 3 ]
