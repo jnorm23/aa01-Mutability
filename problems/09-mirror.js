@@ -5,6 +5,10 @@ new array twice with the second set of elements in reverse order.
 */
 
 // Your code here 
+function mirror(arr) {
+    let mirroredArray = [...arr, ...arr.slice().reverse()];
+    return mirroredArray;
+}
 
 
 // console.log(mirror([1,2,3])); //=> [ 1, 2, 3, 3, 2, 1 ]
