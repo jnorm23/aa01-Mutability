@@ -7,13 +7,11 @@ max.
 // Your code here 
 function evenNumbers(max) {
     let result = [];
-
     for (let i = 1; i < max; i++) {
         if (i % 2 === 0) {
             result.push(i);
         }
     }
-
     return result;
 }
 
