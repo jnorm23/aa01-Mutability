@@ -6,6 +6,11 @@ that were removed.
 */
 
 // Your code here 
+function popper(array, num) {
+    let startIndex = array.length - num;
+    let removedElements = array.splice(startIndex, num);
+    return removedElements;
+}
 
 
 // let arr1 = ['a', 'b', 'c', 'd', 'e'];

@@ -7,7 +7,9 @@ numbers of the sequence.
 */
 
 // Your code here 
-
+function fibonacciSequence(num) {
+    
+}
 
 // console.log(fibonacciSequence(4));  // [ 1, 1, 2, 3 ]
 // console.log(fibonacciSequence(5));  // [ 1, 1, 2, 3, 5 ]

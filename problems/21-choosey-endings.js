@@ -6,7 +6,13 @@ empty array.
 */
 
 // Your code here 
-
+function chooseyEndings(words, suffix) {
+    if (!Array.isArray(words)) {
+        return [];
+    }
+    let filteredWords = words.filter(word => word.endsWith(suffix));
+    return filteredWords;
+}
 
 // console.log(chooseyEndings(['family', 'hound', 'catalyst','fly', 'timidly', 'bond'], 'ly'));
 // //=> [ 'family', 'fly', 'timidly' ]

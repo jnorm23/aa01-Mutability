@@ -6,7 +6,9 @@ the left. The function should mutate the original array.
 */
 
 // Your code here 
-
+function rotate(array, num) {
+    
+}
 
 // let arr = ['a', 'b', 'c', 'd', 'e'];
 // rotate(arr, 2);
