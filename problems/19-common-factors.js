@@ -13,7 +13,6 @@ function commonFactors(num1, num2) {
             result.push(i);
         }
     }
-
     return result;
 }
 
