@@ -9,9 +9,17 @@ HINT: you can use Array's slice() method to create a copy of an array
 
 // Your code here 
 function rotateRight(array, num) {
-    
-}
-
+    if (!Array.isArray(array) || !Number.isInteger(num) || num < 0) {
+      return "Invalid input";
+    }
+    const newArray = array.slice(); 
+    for (let i = 0; i < num; i++) {
+      const lastElement = newArray.pop(); 
+      newArray.unshift(lastElement); 
+    }
+    return newArray;
+  }
+  
 // let arr = ['a', 'b', 'c', 'd', 'e'];
 // console.log(rotateRight(arr, 2)); // [ 'd', 'e', 'a', 'b', 'c' ]
 // console.log(arr); // [ 'a', 'b', 'c', 'd', 'e' ]
