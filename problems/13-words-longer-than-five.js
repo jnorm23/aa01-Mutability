@@ -5,6 +5,9 @@ than 5 characters.
 */
 
 // Your code here 
+function wordsLongerThan5(words) {
+    return words.filter(word => word.length > 5);
+}
 
 
 // let words1 = ['bike', 'skateboard','scooter', 'moped'];
