@@ -8,12 +8,12 @@ element of the sequence.
 
 // Your code here 
 function doubleSequence(base, length) {
-    let sequence = []; 
-    sequence.push(base);
+    if (length <= 0) {
+        return [];
+    }
+    const sequence = [base];
     for (let i = 1; i < length; i++) {
-        let previous = sequence[i - 1];
-        let current = previous * 2;
-        sequence.push(current);
+        sequence.push(sequence[i - 1] * 2);
     }
     return sequence;
 }
